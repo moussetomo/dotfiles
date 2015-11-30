@@ -41,3 +41,19 @@ set visualbell
 set nobackup
 set noswapfile
 set backupdir-=.
+
+" remap commands
+nnoremap s <Nop>
+nnoremap sj <C-w>j
+nnoremap sk <C-w>k
+nnoremap sl <C-w>l
+nnoremap sh <C-w>h
+nnoremap sn gt
+nnoremap sp gT
+nnoremap st :<C-u>tabnew<CR>
+nnoremap sT :<C-u>Unite tab<CR>
+nnoremap ss :<C-u>sp<CR>
+nnoremap sv :<C-u>vs<CR>
+nnoremap ; :
+nnoremap f <C-f>
+nnoremap b <C-b>
