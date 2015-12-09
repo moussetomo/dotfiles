@@ -6,20 +6,24 @@ endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 " originalrepos on github
 	NeoBundle 'Shougo/neobundle.vim'
-	NeoBundle 'Shougo/vimproc'
-	NeoBundle 'VimClojure'
-	NeoBundle 'Shougo/vimshell'
 	NeoBundle 'Shougo/unite.vim'
 	NeoBundle 'Shougo/neocomplcache'
 	NeoBundle 'Shougo/neosnippet'
-	NeoBundle 'jpalardy/vim-slime'
+	NeoBundle 'szw/vim-tags'
 	NeoBundle 'scrooloose/syntastic'
-	" ""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
 call neobundle#end()
 filetype plugin indent on
 filetype indent on
 
+" highlight current row
+set cursorline
+
+" lighlight current column
+set cursorcolumn
+
+" syntax coloring
 syntax enable
+
 set nofoldenable
 
 " colorscheme
@@ -34,6 +38,9 @@ set tabstop=4	" tabspace
 
 " set autoindent
 set autoindent
+
+" allow backspace
+set backspace=indent,eol,start
 
 " No more annoying sounds
 set visualbell
@@ -54,6 +61,9 @@ nnoremap st :<C-u>tabnew<CR>
 nnoremap sT :<C-u>Unite tab<CR>
 nnoremap ss :<C-u>sp<CR>
 nnoremap sv :<C-u>vs<CR>
+nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
+nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
+
 nnoremap ; :
 nnoremap f <C-f>
 nnoremap b <C-b>
