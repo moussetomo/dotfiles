@@ -1,0 +1,2 @@
+" colorscheme
+set background=dark
