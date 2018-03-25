@@ -6,3 +6,7 @@ repo = 'scrooloose/nerdtree'
 
 [[plugins]]
 repo = 'Shougo/neocomplete.vim'
+
+[[plugins]]
+repo = 'justmao945/vim-clang'
+
