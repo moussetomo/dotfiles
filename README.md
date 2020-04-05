@@ -1,3 +1,22 @@
+# Install pyenv
+
+# Install nodenv
+```
+git clone https://github.com/nodenv/nodenv.git ~/.nodenv
+
+```
+
+# Install node-build
+```
+git clone https://github.com/nodenv/node-build.git
+PREFIX=~/.local ./node-build/install.sh
+```
+# Install Nodejs
+```
+nodenv install -l
+nodenv install $VERSION
+```
+
 # Install neovim
 ```
 curl -LO https://github.com/neovim/neovim/releases/download/v0.3.8/nvim.appimage
