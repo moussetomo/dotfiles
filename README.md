@@ -43,10 +43,15 @@ check with
 vim --version | grep lua
 ```
 
-#Install Plugins
+# Install Plugins
 ```
 nvim ~/.config/nvim/init.nvim
 :source %
 :PlugInstall
 :CocInstall coc-tsserver
+```
+# Create compile commands
+```
+pip install compiledb
+compiledb make
 ```
