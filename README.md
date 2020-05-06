@@ -49,6 +49,14 @@ nvim ~/.config/nvim/init.nvim
 :PlugInstall
 :CocInstall coc-tsserver
 ```
+
+#Install necessary binaries
+```
+# clangd 9.0.1
+wget https://releases.llvm.org/9.0.0/clang+llvm-9.0.0-x86_64-linux-gnu-ubuntu-16.04.tar.xz
+wget bear
+```
+
 # Create compile commands
 ```
 pip install compiledb
