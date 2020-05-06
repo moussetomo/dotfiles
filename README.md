@@ -33,14 +33,13 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 
 ```
 git clone https://github.com/moussetomo/dotfiles.git
-ln -s dotfiles/vimfiles .vim
-ln -s dotfiles/.vimrc .vimrc
+mkdir -p ~/.config
+ln -s dotfiles/nvim .config/nvim
 ```
 
-Vim with lua capability is required.
-check with
+Add custom bashrc
 ```
-vim --version | grep lua
+echo 'source ~/dotfiles/my.bashrc' >> .bashrc
 ```
 
 # Install Plugins
