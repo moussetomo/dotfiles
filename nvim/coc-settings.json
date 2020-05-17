@@ -1,7 +1,7 @@
 {
   "languageserver": {
     "clangd": {
-      "command": "clangd",
+      "command": "~/bin/clang/bin/clangd",
       "rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/"],
       "filetypes": ["c", "cpp"]
     }
