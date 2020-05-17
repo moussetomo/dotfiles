@@ -62,11 +62,11 @@ nmap <Left> :tabprevious<CR>
 " fuzzy search
 nnoremap <S-f> :FZFFileList<CR>
 command! FZFFileList call fzf#run({
-    \ 'source': 'find . -type d -name .git -prune -o ! -name .DS_Store',
+    \ 'source': 'find . -type d \( -name .git -o -name .clangd \) -prune -o ! -name compile_commands.json',
     \ 'sink': 'e'})
 
 " MRU search
-nnoremap <S-m> :FZFMru<CR>
+nnoremap <S-r> :FZFMru<CR>
 command! FZFMru call fzf#run({
     \ 'source': v:oldfiles,
     \ 'sink': 'tabe',
