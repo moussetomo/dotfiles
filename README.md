@@ -1,4 +1,13 @@
 # Install pyenv
+```
+git clone git://github.com/yyuu/pyenv.git ~/.pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+source ~/.bash_profile
+sudo apt install zlib1g-dev libbz2-dev libreadline-dev libssl-dev libsqlite3-dev
+pyenv install 3.6.0
+pyenv versions
+```
 
 # Install nodenv
 ```
